@@ -6,9 +6,13 @@ body{
 }
 
 header {
-    padding: 30px 0;
+    padding: 18px 0;
     background-color: #66e;
     color: #f4f4f4;
+    width: 86%;
+    position:absolute;
+    right: 0;
+    top: 0;
 }
 
 section{
@@ -146,12 +150,70 @@ h2{
     -o-transition: 0.6s ease;
 }
 
-h2:hover{
-    border-bottom: 3px #4a4a4a34 solid;
-    border-radius: 5px;
-    border-width: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.COMBOSECTION1 {
+  width: 90%;
+  height: 1000px;
+  background: #000;
+  border: 15px;
+  margin: auto;
+  margin-top: 500px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.sidebar{
+    /*Measurments*/
+    top: 0;
+    width: 14vw;
+    height: 100%;
+    padding: 15px;
+    /*Contentbox*/
+    position: fixed;
+    overflow: hidden;
+    box-sizing: border-box;
+    /*Aesthetics*/
+    color: #fff;
+    background: #aae;
+    box-shadow: 0 0 15px 0 #5556;
+    /*Fontandtext*/
+    font-weight: 100;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    transition: 0.3s;
+}
+
+.Opaco {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 86vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover{
+    z-index: 1;
+    box-shadow: 0 0 100vw 0 #56e;
+}
+
+.sidebar:hover ~ .Opaco {
+    opacity: 1;
+}
+
+.Selects, .contactMe, .FAQ{
+    width: 14vw;
+    margin: 15px 5px;
+    padding: 4px 2px;
+    border: none;
+    text-decoration: none;
+    border-left: 3px solid #33e;
+    background-color: #66e;
+    color: #000;
+    transition: 0.2s;
 }

@@ -1,8 +1,22 @@
-body{
-    text-align: center;
-    font-family: sans-serif;
-    background-color: #66e5;
+html, body {
+    height: 100%;
     margin: 0;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  border: 0;
+  margin: 0;
+}
+
+#contenedor {
+    display: flex;
+    height: 100%;
 }
 
 header {
@@ -48,7 +62,7 @@ li{
 
 .li1{
     height: 23px;
-    padding: 5px;
+    padding: 15px 5px;
     width: 80%;
     background-color: #f4f4f4;
     color: #000;
@@ -66,7 +80,7 @@ li{
 }
 
 .li1:hover{
-    padding: 7px;
+    padding: 17px;
     box-shadow: 0 0 40px 0 #0f0f0f;
 }
 
@@ -139,6 +153,24 @@ li{
   }
 }
 
+    #secciones-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.seccion-box {
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    min-width: 250px;
+}
+
 h2{
     transition: 0.6s ease;
     -webkit-transition: 0.6s ease;
@@ -150,10 +182,10 @@ h2{
 .COMBOSECTION1 {
   width: 90%;
   height: 1000px;
-  background: #000;
+  background: #aae;
   border: 15px;
   margin: auto;
-  margin-top: 500px;
+  margin-top: 50px;
   box-sizing: border-box;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -162,3 +194,156 @@ h2{
   -o-border-radius: 8px;
 }
 
+#secciones-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.seccion-box {
+    flex: 1 1 300px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.subT{
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.combo1{
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Pinyon Script";
+  font-size: 2.5rem;
+  color: #a4a;
+}
+
+.combo2{
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Pinyon Script";
+  font-size: 2.5rem;
+  color: #a2e25d;
+}
+
+.combo3{
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Pinyon Script";
+  font-size: 2.5rem;
+  color: #81d2cc;
+}
+
+.combo4{
+  text-align: center;
+  padding: 0px 20px;
+  font-family: "Pinyon Script";
+  font-size: 2.5rem;
+  color: #ea7f7f;
+}
+
+.producto{
+  justify-content: space-evenly;
+  padding: 7px;
+  margin: 35px;
+  height: 250px;
+  width: 250px;
+  border-radius: 7px;
+  box-shadow: -10px 10px 0 0 #4a4a4a34;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  background-color: #a4a;
+}
+
+.contenedor{
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn-interes {
+    background-color: #77f;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-interes:hover {
+    background-color: #6a00a3;
+}
+
+
+#contenido-panel {
+    margin-top: 2rem;
+}
+
+/* Contenedor principal que contiene el contenido + panel */
+#contenedor {
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+#contenido-principal {
+    flex: 1;
+    overflow-y: auto; /* allows scroll inside content */
+    padding: 1rem;
+}
+
+.panel-derecho {
+    width: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.panel-derecho.visible {
+    width: 300px;
+    padding: 1rem;
+}
+/* Botón para cerrar */
+.cerrar-panel {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* FONTS */
+
+.russo-one-regular {
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* FONTS */

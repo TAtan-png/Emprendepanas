@@ -1,68 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+    <!-- FONTS -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/PrinStyle.css">
     <title>ElQueVendeDeTodo</title>
 </head>
 <body>
+<div id="contenedor">
+
+    <main id="contenido-principal">
+
     <header>
-        <h1>Catalogo por mayor</h1>
+        <h1>Catálogo por mayor</h1>
         <hr>
-        <span class="titlespan">Bienvenido al catálogo de "Pana Vendedores". Aquí veras todos los productos por mayor y combos que te llamen la atencion</span>
+        <span class="titlespan">Bienvenido al catálogo de "Pana Vendedores". Aquí verás todos los productos por mayor y combos que te llamen la atención</span>
     </header>
 
-<h2>¿Por qué comprarnos?</h2>
+<div id="secciones-horizontal">
+    <!-- ¿Por qué comprarnos? -->
+    <section class="seccion-box">
+        <h2>¿Por qué comprarnos?</h2>
+        <ul class="COMPRARNOS">
+            <li class="li1">Precios de ganga en coleccionables💸</li>
+            <li class="li1">El mejor servicio👨‍🔧</li>
+            <li class="li1">Coleccionables exclusivos💎</li>
+            
+        </ul>
+    </section>
 
-<ul class="COMPRARNOS">
-<li class="li1">Precios de ganga en coleccionables💸</li>
-<li class="li1">El mejor servicio👨‍🔧</li>
-<li class="li1">Coleccionables exclusivos💎</li>
-<li class="li1">Reinversion futura en coleccionables💸</li>
-</ul>
+    <!-- Quiénes somos -->
+    <section class="seccion-box">
+        <h2>Quiénes somos</h2>
+        <p>Somo dos amigos que decidieron iniciar un emprendimiento utilizando todos nuestros conocimientos para poder tener una venta viable en la que aprendamos cómo emprender a pequeña escala.</p>
+        <hr>
+        <p>Hemos iniciado a emprender desde edades cortas. Siempre ha sido algo familiar o en una inversión segura, nunca a esta magnitud individual.</p>
+        <hr>
+        <p>Disfruta de todo lo que ofrecemos a buenos precios😁</p>
+    </section>
+
+    <!-- El catálogo/web -->
+    <section class="seccion-box">
+        <h2>El catálogo/web</h2>
+        <p class="COMPRARNOS">
+            Aquí habrá información importante acerca de la web y el catálogo:
+        </p>
+        <ul id="apartados" class="COMPRARNOS">
+            <li>La web NO es profesional, estaremos al pendiente por mensajes de bugs o errores.</li>
+            <li>Esta no es una página de servicio al cliente.</li>
+            <li>El catálogo solo es de combos y de ventas por mayor.</li>
+        </ul>
+    </section>
 </div>
 
-<div id="principal">
-<div id="descripcion">
-<h2>Quienes somos</h2>
-
-<section class="COMPRARNOS">
-<p>
-Somo dos amigos que decidieron iniciar un emprendemiento utilizando todos nuestros conocimientos para poder tener una venta viable en la que aprendamos como emprender a pequeña escala
-</p>
-<hr>
-<p>
-Nosotros hemos iniciado a emprender desde edades cortas, ahora bien, siempre ha sido o familiar, o en una inversion segura, nunca ha esta magnitud individual, en la que ambos ponemos nuestra parte para que todo funcione.
-</p>
-<hr>
-<p>
-Disfruta de todo lo que ofrecemos a buenos precios😁
-</p>
-</div>
-</section>
-
-<div id="contenido">
-<h2>El catalogo/web</h2>
-
-<p class="COMPRARNOS">
-Aquí abra información importante hacerca de la web y el catalogo:
-</p>
-
-
-<ul id="apartados" class="COMPRARNOS">
-<li>La web NO es profesional, estaremos al pendiente por mensajes de bugs o errores.</li>
-
-<li>Esta no es una página de servicio al cliente.</li>
-
-<li>El catalogo solo es de combos y de ventas por mayor</li>
-</ul>
-</div>
-</div>
 
 <section class="COMBOSECTION1">
+        <!-- Aquí puedes poner combos destacados o anuncios -->
+        <p class="subT">COMBO<br><span class="combo1">Cartas japonesas</span></p>
+        <div class="contenedor">
+            <div class="producto">
+            <img src="" alt="imagen del combo">
+            Producto tal
+            <p>precio: tal</p>
+            <p>combo tal</p>
+            <p>info extra</p>
 
+        <button onclick="mostrarPanel('producto123')" class="btn-interes">
+        Me interesa
+        </button>
+
+        </div>
+
+        <div class="producto">
+            <img src="" alt="imagen del combo">
+            Producto tal
+            <p>precio: tal</p>
+            <p>combo tal</p>
+            <p>info extra</p>
+
+        <button onclick="mostrarPanel('producto123')" class="btn-interes">
+        Me interesa
+        </button>
+
+        </div>
+        </div>
 </section>
+
+<section class="COMBOSECTION1">
+        <p class="subT">COMBO<br><span class="combo2">Cartas pokemon</span></p>
+</section>
+
+<section class="COMBOSECTION1">
+        <p class="subT">COMBO<br><span class="combo3">Grocery gangs</span></p>
+</section>
+
+<section class="COMBOSECTION1">
+        <p class="subT">COMBO<br><span class="combo4">Productos varios</span></p>
+</section>
+
+
+</main>
+
+<aside id="panel-producto" class="panel-derecho">
+        <button class="cerrar-panel" onclick="cerrarPanel()">✖</button>
+        <div id="contenido-panel">
+        </div>
+    </aside>
+
+</div>
+
+<script>
+    function mostrarPanel(idProducto) {
+    const panel = document.getElementById('panel-producto');
+    const contenido = document.getElementById('contenido-panel');
+    
+    contenido.innerHTML = `
+        <h3>Producto ${idProducto}</h3>
+        <p>Este es un producto muy especial. Contáctanos para más información.</p>
+    `;
+    
+    panel.classList.add('visible');
+}
+
+function cerrarPanel() {
+    const panel = document.getElementById('panel-producto');
+    panel.classList.remove('visible');
+}
+
+
+</script>
 
 </body>
 </html>
